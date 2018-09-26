@@ -1,0 +1,40 @@
+conky.config = {
+    update_interval=1,
+    background=false,
+    text_buffer_size=2048,
+    double_buffer=true,
+    no_buffers=true,
+    use_xft=true,
+    font='monospace:pixelsize=11',
+    draw_shades=false,
+    override_utf8_locale=true,
+    own_window=true,
+    own_window_type='normal',
+    own_window_class='Conky',
+    own_window_argb_visual=true,
+    own_window_hints='undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_value=0,
+    draw_graph_borders=false,
+
+    default_color = '#ea4335',
+    alignment = 'top_right',
+    gap_x = 60,
+    gap_y = 60,
+    minimum_width = 390, minimum_height = 150,
+    maximum_width = 390,
+};
+
+conky.text = [[
+${diskiograph /dev/sda5 30,300 330106 ea4335 scale 60Gb -l} ${voffset -15} ${diskio /dev/sda5} 
+${goto 315}linux
+
+${diskiograph_read /dev/sda5 30,300 14151f a5a5a5 scale 60Gb -l} ${voffset -15} ${diskio_read /dev/sda5} 
+${goto 315}linux_read
+
+${diskiograph_write /dev/sda5 30,300 14151f ffffff scale 60Gb -l} ${voffset -15} ${diskio_write /dev/sda5} 
+${goto 315}linux_write
+
+${diskiograph /dev/sda4 35,300 ea4335 ea4335 scale 60Gb -l} ${voffset -15} ${diskio /dev/sda4}
+${goto 310} /dat
+
+]]

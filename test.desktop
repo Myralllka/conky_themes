@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=~/blood-and-milk/conky_start

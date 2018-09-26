@@ -1,0 +1,13 @@
+#!/bin/bash
+
+conky -c ~/blood-and-milk/conky_asset &
+conky -c ~/blood-and-milk/conky_connections &
+conky -c ~/blood-and-milk/conky_cpu_histograme.conf &
+conky -c ~/blood-and-milk/conky_cpus_my &
+conky -c ~/blood-and-milk/conky_disk &
+conky -c ~/blood-and-milk/conky_gmail &
+conky -c ~/blood-and-milk/conky_mem_my.conf &
+conky -c ~/blood-and-milk/conky_fs_disk &
+conky -c ~/blood-and-milk/conky_notes &
+conky -c ~/blood-and-milk/conky_processes &
+conky -c ~/blood-and-milk/conky_temperature &
