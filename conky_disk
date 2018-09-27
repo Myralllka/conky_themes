@@ -25,16 +25,16 @@ conky.config = {
 };
 
 conky.text = [[
-${diskiograph /dev/sda5 30,300 330106 ea4335 scale 60Gb -l} ${voffset -15} ${diskio /dev/sda5} 
+${diskiograph /dev/sda5 30,300 330106 ea4335 scale 60Gb -l-t} ${voffset -15} ${diskio /dev/sda5} 
 ${goto 315}linux
 
-${diskiograph_read /dev/sda5 30,300 14151f a5a5a5 scale 60Gb -l} ${voffset -15} ${diskio_read /dev/sda5} 
+${diskiograph_read /dev/sda5 30,300 14151f a5a5a5 scale 60Gb -l -t} ${voffset -15} ${diskio_read /dev/sda5} 
 ${goto 315}linux_read
 
-${diskiograph_write /dev/sda5 30,300 14151f ffffff scale 60Gb -l} ${voffset -15} ${diskio_write /dev/sda5} 
+${diskiograph_write /dev/sda5 30,300 14151f ffffff scale 60Gb -l -t} ${voffset -15} ${diskio_write /dev/sda5} 
 ${goto 315}linux_write
 
-${diskiograph /dev/sda4 35,300 ea4335 ea4335 scale 60Gb -l} ${voffset -15} ${diskio /dev/sda4}
+${diskiograph /dev/sda4 35,300 ea4335 ea4335 scale 60Gb -l -t} ${voffset -15} ${diskio /dev/sda4}
 ${goto 310} /dat
 
 ]]

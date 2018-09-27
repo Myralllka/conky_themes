@@ -1,0 +1,216 @@
+conky.config = {
+    update_interval=0.1,
+    imlib_cache_size=10,
+    alignment = top_left,
+    gap_x = 956,
+    gap_y = 240,
+    minimum_width = 638, minimum_height = 638,
+    maximum_width = 638,
+    double_buffer = yes,
+    background=false,
+    text_buffer_size=2048,
+    double_buffer=true,
+    no_buffers=true,
+    use_xft=true,
+    font='monospace:pixelsize=11',
+    draw_shades=false,
+    override_utf8_locale=true,
+
+    cpu_avg_samples=2,
+    diskio_avg_samples=2,
+    net_avg_samples=2,
+
+
+    own_window=true,
+    own_window_type='normal',
+    own_window_class='Conky',
+    own_window_argb_visual=true,
+    own_window_hints='undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_value=0,
+	default_color='#ea4335',
+	
+};
+
+conky.text = [[
+${if_updatenr 1}${image ~/hightech/cpu/anim/li0.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 2}${image ~/hightech/cpu/anim/li1.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 3}${image ~/hightech/cpu/anim/li2.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 4}${image ~/hightech/cpu/anim/li3.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 5}${image ~/hightech/cpu/anim/li4.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 6}${image ~/hightech/cpu/anim/li5.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 7}${image ~/hightech/cpu/anim/li6.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 8}${image ~/hightech/cpu/anim/li7.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 9}${image ~/hightech/cpu/anim/li8.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 10}${image ~/hightech/cpu/anim/li9.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 11}${image ~/hightech/cpu/anim/li10.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 12}${image ~/hightech/cpu/anim/li11.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 13}${image ~/hightech/cpu/anim/li12.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 14}${image ~/hightech/cpu/anim/li13.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 15}${image ~/hightech/cpu/anim/li14.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 16}${image ~/hightech/cpu/anim/li15.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 17}${image ~/hightech/cpu/anim/li16.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 18}${image ~/hightech/cpu/anim/li17.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 19}${image ~/hightech/cpu/anim/li18.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 20}${image ~/hightech/cpu/anim/li19.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 21}${image ~/hightech/cpu/anim/li20.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 22}${image ~/hightech/cpu/anim/li21.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 23}${image ~/hightech/cpu/anim/li22.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 24}${image ~/hightech/cpu/anim/li23.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 25}${image ~/hightech/cpu/anim/li24.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 26}${image ~/hightech/cpu/anim/li25.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 27}${image ~/hightech/cpu/anim/li26.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 28}${image ~/hightech/cpu/anim/li27.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 29}${image ~/hightech/cpu/anim/li28.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 30}${image ~/hightech/cpu/anim/li29.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 31}${image ~/hightech/cpu/anim/li30.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 32}${image ~/hightech/cpu/anim/li31.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 33}${image ~/hightech/cpu/anim/li32.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 34}${image ~/hightech/cpu/anim/li33.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 35}${image ~/hightech/cpu/anim/li34.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 36}${image ~/hightech/cpu/anim/li35.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 37}${image ~/hightech/cpu/anim/li36.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 38}${image ~/hightech/cpu/anim/li37.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 39}${image ~/hightech/cpu/anim/li38.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 40}${image ~/hightech/cpu/anim/li39.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 41}${image ~/hightech/cpu/anim/li40.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 42}${image ~/hightech/cpu/anim/li41.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 43}${image ~/hightech/cpu/anim/li42.png -p 145,28 -s 80x80}${endif}
+${if_updatenr 44}${image ~/hightech/cpu/anim/li43.png -p 145,28 -s 80x80}${endif}
+#cpu3
+${if_updatenr 1}${image ~/hightech/cpu/anim/li20.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 2}${image ~/hightech/cpu/anim/li21.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 3}${image ~/hightech/cpu/anim/li22.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 4}${image ~/hightech/cpu/anim/li23.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 5}${image ~/hightech/cpu/anim/li24.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 6}${image ~/hightech/cpu/anim/li25.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 7}${image ~/hightech/cpu/anim/li26.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 8}${image ~/hightech/cpu/anim/li27.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 9}${image ~/hightech/cpu/anim/li28.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 10}${image ~/hightech/cpu/anim/li29.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 11}${image ~/hightech/cpu/anim/li30.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 12}${image ~/hightech/cpu/anim/li31.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 13}${image ~/hightech/cpu/anim/li32.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 14}${image ~/hightech/cpu/anim/li33.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 15}${image ~/hightech/cpu/anim/li34.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 16}${image ~/hightech/cpu/anim/li35.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 17}${image ~/hightech/cpu/anim/li36.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 18}${image ~/hightech/cpu/anim/li37.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 19}${image ~/hightech/cpu/anim/li38.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 20}${image ~/hightech/cpu/anim/li39.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 21}${image ~/hightech/cpu/anim/li40.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 22}${image ~/hightech/cpu/anim/li41.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 23}${image ~/hightech/cpu/anim/li42.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 24}${image ~/hightech/cpu/anim/li43.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 25}${image ~/hightech/cpu/anim/li0.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 26}${image ~/hightech/cpu/anim/li1.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 27}${image ~/hightech/cpu/anim/li2.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 28}${image ~/hightech/cpu/anim/li3.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 29}${image ~/hightech/cpu/anim/li4.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 30}${image ~/hightech/cpu/anim/li5.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 31}${image ~/hightech/cpu/anim/li6.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 32}${image ~/hightech/cpu/anim/li7.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 33}${image ~/hightech/cpu/anim/li8.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 34}${image ~/hightech/cpu/anim/li9.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 35}${image ~/hightech/cpu/anim/li10.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 36}${image ~/hightech/cpu/anim/li11.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 37}${image ~/hightech/cpu/anim/li12.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 38}${image ~/hightech/cpu/anim/li13.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 39}${image ~/hightech/cpu/anim/li14.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 40}${image ~/hightech/cpu/anim/li15.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 41}${image ~/hightech/cpu/anim/li16.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 42}${image ~/hightech/cpu/anim/li17.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 43}${image ~/hightech/cpu/anim/li18.png -p 472,28 -s 80x80}${endif}
+${if_updatenr 44}${image ~/hightech/cpu/anim/li19.png -p 472,28 -s 80x80}${endif}
+#cpu2
+${if_updatenr 1}${image ~/hightech/cpu/anim/li20.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 2}${image ~/hightech/cpu/anim/li21.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 3}${image ~/hightech/cpu/anim/li22.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 4}${image ~/hightech/cpu/anim/li23.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 5}${image ~/hightech/cpu/anim/li24.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 6}${image ~/hightech/cpu/anim/li25.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 7}${image ~/hightech/cpu/anim/li26.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 8}${image ~/hightech/cpu/anim/li27.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 9}${image ~/hightech/cpu/anim/li28.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 10}${image ~/hightech/cpu/anim/li29.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 11}${image ~/hightech/cpu/anim/li30.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 12}${image ~/hightech/cpu/anim/li31.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 13}${image ~/hightech/cpu/anim/li32.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 14}${image ~/hightech/cpu/anim/li33.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 15}${image ~/hightech/cpu/anim/li34.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 16}${image ~/hightech/cpu/anim/li35.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 17}${image ~/hightech/cpu/anim/li36.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 18}${image ~/hightech/cpu/anim/li37.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 19}${image ~/hightech/cpu/anim/li38.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 20}${image ~/hightech/cpu/anim/li39.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 21}${image ~/hightech/cpu/anim/li40.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 22}${image ~/hightech/cpu/anim/li41.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 23}${image ~/hightech/cpu/anim/li42.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 24}${image ~/hightech/cpu/anim/li43.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 25}${image ~/hightech/cpu/anim/li0.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 26}${image ~/hightech/cpu/anim/li1.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 27}${image ~/hightech/cpu/anim/li2.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 28}${image ~/hightech/cpu/anim/li3.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 29}${image ~/hightech/cpu/anim/li4.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 30}${image ~/hightech/cpu/anim/li5.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 31}${image ~/hightech/cpu/anim/li6.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 32}${image ~/hightech/cpu/anim/li7.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 33}${image ~/hightech/cpu/anim/li8.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 34}${image ~/hightech/cpu/anim/li9.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 35}${image ~/hightech/cpu/anim/li10.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 36}${image ~/hightech/cpu/anim/li11.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 37}${image ~/hightech/cpu/anim/li12.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 38}${image ~/hightech/cpu/anim/li13.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 39}${image ~/hightech/cpu/anim/li14.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 40}${image ~/hightech/cpu/anim/li15.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 41}${image ~/hightech/cpu/anim/li16.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 42}${image ~/hightech/cpu/anim/li17.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 43}${image ~/hightech/cpu/anim/li18.png -p 145,138 -s 80x80}${endif}
+${if_updatenr 44}${image ~/hightech/cpu/anim/li19.png -p 145,138 -s 80x80}${endif}
+#cpu4
+${if_updatenr 1}${image ~/hightech/cpu/anim/li0.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 2}${image ~/hightech/cpu/anim/li1.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 3}${image ~/hightech/cpu/anim/li2.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 4}${image ~/hightech/cpu/anim/li3.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 5}${image ~/hightech/cpu/anim/li4.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 6}${image ~/hightech/cpu/anim/li5.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 7}${image ~/hightech/cpu/anim/li6.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 8}${image ~/hightech/cpu/anim/li7.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 9}${image ~/hightech/cpu/anim/li8.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 10}${image ~/hightech/cpu/anim/li9.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 11}${image ~/hightech/cpu/anim/li10.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 12}${image ~/hightech/cpu/anim/li11.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 13}${image ~/hightech/cpu/anim/li12.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 14}${image ~/hightech/cpu/anim/li13.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 15}${image ~/hightech/cpu/anim/li14.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 16}${image ~/hightech/cpu/anim/li15.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 17}${image ~/hightech/cpu/anim/li16.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 18}${image ~/hightech/cpu/anim/li17.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 19}${image ~/hightech/cpu/anim/li18.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 20}${image ~/hightech/cpu/anim/li19.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 21}${image ~/hightech/cpu/anim/li20.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 22}${image ~/hightech/cpu/anim/li21.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 23}${image ~/hightech/cpu/anim/li22.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 24}${image ~/hightech/cpu/anim/li23.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 25}${image ~/hightech/cpu/anim/li24.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 26}${image ~/hightech/cpu/anim/li25.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 27}${image ~/hightech/cpu/anim/li26.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 28}${image ~/hightech/cpu/anim/li27.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 29}${image ~/hightech/cpu/anim/li28.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 30}${image ~/hightech/cpu/anim/li29.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 31}${image ~/hightech/cpu/anim/li30.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 32}${image ~/hightech/cpu/anim/li31.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 33}${image ~/hightech/cpu/anim/li32.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 34}${image ~/hightech/cpu/anim/li33.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 35}${image ~/hightech/cpu/anim/li34.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 36}${image ~/hightech/cpu/anim/li35.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 37}${image ~/hightech/cpu/anim/li36.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 38}${image ~/hightech/cpu/anim/li37.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 39}${image ~/hightech/cpu/anim/li38.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 40}${image ~/hightech/cpu/anim/li39.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 41}${image ~/hightech/cpu/anim/li40.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 42}${image ~/hightech/cpu/anim/li41.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 43}${image ~/hightech/cpu/anim/li42.png -p 472,138 -s 80x80}${endif}
+${if_updatenr 44}${image ~/hightech/cpu/anim/li43.png -p 472,138 -s 80x80}${endif}
+
+
+]];

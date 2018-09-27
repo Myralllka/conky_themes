@@ -112,6 +112,21 @@ settings_table = {
         start_angle=-150,
         end_angle=-30
     },
+    {
+        name='exec',
+        arg="amixer get Master | grep 'Front Left:' | awk '{print $5}' | grep -o '[0-9]' | tr -d '\n'",
+        max=100,
+        bg_colour=0xffffff,
+        bg_alpha=0.1,
+        fg_colour=0xea4335,
+        fg_alpha=0.5,
+        x=963, y=458,
+        radius=207,
+        thickness=2,
+        start_angle=0,
+        end_angle=360
+    },
+
 }
 require 'cairo'
 

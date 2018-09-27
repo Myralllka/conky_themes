@@ -22,7 +22,6 @@ conky.config = {
     gap_y = 320,
     minimum_width = 440, minimum_height = 150,
     maximum_width = 440,
---# ${voffset -38}${upspeedgraph wlp3s0 45,300 14151f 80ff80 scale 15.6Gb -l}
 };
 
 conky.text = [[

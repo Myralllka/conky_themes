@@ -1,0 +1,117 @@
+conky.config = {
+    update_interval=0.09,
+    imlib_cache_size=100,
+    alignment = top_left,
+    gap_x = 680,
+    gap_y = 430,
+    minimum_width = 600, minimum_height = 600,
+    maximum_width = 600,
+    double_buffer = yes,
+    background=false,
+    text_buffer_size=2048,
+    double_buffer=true,
+    no_buffers=true,
+    use_xft=true,
+    font='monospace:pixelsize=11',
+    draw_shades=false,
+    override_utf8_locale=true,
+
+    cpu_avg_samples=2,
+    diskio_avg_samples=2,
+    net_avg_samples=2,
+
+
+    own_window=true,
+    own_window_type='normal',
+    own_window_class='Conky',
+    own_window_argb_visual=true,
+    own_window_hints='undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_value=0,
+	default_color='#ea4335',
+	
+};
+
+conky.text = [[
+${if_updatenr 1}${image ~/blood-and-milk/net/anim/1.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 2}${image ~/blood-and-milk/net/anim/4.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 3}${image ~/blood-and-milk/net/anim/7.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 4}${image ~/blood-and-milk/net/anim/10.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 5}${image ~/blood-and-milk/net/anim/13.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 6}${image ~/blood-and-milk/net/anim/16.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 7}${image ~/blood-and-milk/net/anim/19.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 8}${image ~/blood-and-milk/net/anim/22.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 9}${image ~/blood-and-milk/net/anim/25.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 10}${image ~/blood-and-milk/net/anim/28.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 11}${image ~/blood-and-milk/net/anim/31.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 12}${image ~/blood-and-milk/net/anim/34.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 13}${image ~/blood-and-milk/net/anim/37.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 14}${image ~/blood-and-milk/net/anim/40.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 15}${image ~/blood-and-milk/net/anim/43.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 16}${image ~/blood-and-milk/net/anim/46.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 17}${image ~/blood-and-milk/net/anim/49.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 18}${image ~/blood-and-milk/net/anim/52.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 19}${image ~/blood-and-milk/net/anim/55.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 20}${image ~/blood-and-milk/net/anim/58.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 21}${image ~/blood-and-milk/net/anim/61.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 22}${image ~/blood-and-milk/net/anim/64.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 23}${image ~/blood-and-milk/net/anim/67.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 24}${image ~/blood-and-milk/net/anim/70.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 25}${image ~/blood-and-milk/net/anim/73.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 26}${image ~/blood-and-milk/net/anim/76.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 27}${image ~/blood-and-milk/net/anim/79.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 28}${image ~/blood-and-milk/net/anim/82.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 29}${image ~/blood-and-milk/net/anim/85.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 30}${image ~/blood-and-milk/net/anim/88.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 31}${image ~/blood-and-milk/net/anim/91.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 32}${image ~/blood-and-milk/net/anim/94.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 33}${image ~/blood-and-milk/net/anim/97.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 34}${image ~/blood-and-milk/net/anim/100.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 35}${image ~/blood-and-milk/net/anim/103.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 36}${image ~/blood-and-milk/net/anim/106.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 37}${image ~/blood-and-milk/net/anim/109.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 38}${image ~/blood-and-milk/net/anim/112.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 39}${image ~/blood-and-milk/net/anim/115.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 40}${image ~/blood-and-milk/net/anim/118.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 41}${image ~/blood-and-milk/net/anim/121.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 42}${image ~/blood-and-milk/net/anim/124.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 43}${image ~/blood-and-milk/net/anim/127.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 44}${image ~/blood-and-milk/net/anim/130.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 45}${image ~/blood-and-milk/net/anim/133.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 46}${image ~/blood-and-milk/net/anim/136.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 47}${image ~/blood-and-milk/net/anim/139.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 48}${image ~/blood-and-milk/net/anim/142.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 49}${image ~/blood-and-milk/net/anim/145.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 50}${image ~/blood-and-milk/net/anim/148.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 51}${image ~/blood-and-milk/net/anim/151.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 52}${image ~/blood-and-milk/net/anim/154.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 53}${image ~/blood-and-milk/net/anim/157.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 54}${image ~/blood-and-milk/net/anim/160.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 55}${image ~/blood-and-milk/net/anim/163.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 56}${image ~/blood-and-milk/net/anim/166.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 57}${image ~/blood-and-milk/net/anim/169.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 58}${image ~/blood-and-milk/net/anim/172.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 59}${image ~/blood-and-milk/net/anim/175.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 60}${image ~/blood-and-milk/net/anim/178.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 61}${image ~/blood-and-milk/net/anim/181.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 62}${image ~/blood-and-milk/net/anim/184.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 63}${image ~/blood-and-milk/net/anim/187.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 64}${image ~/blood-and-milk/net/anim/190.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 65}${image ~/blood-and-milk/net/anim/193.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 66}${image ~/blood-and-milk/net/anim/196.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 67}${image ~/blood-and-milk/net/anim/199.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 68}${image ~/blood-and-milk/net/anim/202.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 69}${image ~/blood-and-milk/net/anim/205.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 70}${image ~/blood-and-milk/net/anim/208.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 71}${image ~/blood-and-milk/net/anim/211.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 72}${image ~/blood-and-milk/net/anim/214.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 73}${image ~/blood-and-milk/net/anim/217.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 74}${image ~/blood-and-milk/net/anim/220.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 75}${image ~/blood-and-milk/net/anim/223.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 76}${image ~/blood-and-milk/net/anim/226.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 77}${image ~/blood-and-milk/net/anim/229.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 78}${image ~/blood-and-milk/net/anim/232.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 79}${image ~/blood-and-milk/net/anim/235.png -p 100,340 -s 370x370}${endif}
+${if_updatenr 80}${image ~/blood-and-milk/net/anim/238.png -p 100,340 -s 370x370}${endif}
+
+
+]];
