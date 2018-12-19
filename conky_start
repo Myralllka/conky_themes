@@ -2,6 +2,8 @@
 
 speedtest-cli --simple > ~/blood-and-milk/.speeds 2>&1 &
 
+gsettings set org.gnome.desktop.background picture-uri "file:///home/$USER/blood-and-milk/wall.png"
+
 sleep 10
 
 conky -c ~/blood-and-milk/conky_asset &

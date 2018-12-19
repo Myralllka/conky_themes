@@ -1,9 +1,9 @@
 conky.config = {
-    update_interval=0.1,
+    update_interval=0.09,
     imlib_cache_size=10,
     alignment = top_left,
-    gap_x = 956,
-    gap_y = 240,
+    gap_x = 620,
+    gap_y = 430,
     minimum_width = 638, minimum_height = 638,
     maximum_width = 638,
     double_buffer = yes,
