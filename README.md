@@ -38,11 +38,11 @@ and than you need only to start the app
 ~~~~
 
 <h2>Contribution</h2>
-If you want to modify this files:
-1) fork it
-2) create new directory inside
-3) modify that directory as you want
-4) make pull request
+If you want to modify this files:<br>
+1) fork it<br>
+2) create new directory inside<br>
+3) modify that directory as you want<br>
+4) make pull request<br>
 <hr>
 if you want to understand in which way each file works, you can do:
 
