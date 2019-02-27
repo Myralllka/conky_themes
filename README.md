@@ -26,11 +26,11 @@ yaourt -S conky-cairo
 ~~~~
 2) clone this repo from git:
 ~~~~
-git clone https://github.com/Myralllka/blood-and-milk.git ~/blood_and_milk
+git clone https://github.com/Myralllka/blood-and-milk.git ~/blood-and-milk
 ~~~~
 3) move into the directory and make app executable:
 ~~~~
-cd ~/blood_and_milk; sudo chmod +x Application.sh
+cd ~/blood-and-milk; sudo chmod +x Application.sh
 ~~~~
 and than you need only to start the app
 ~~~~
