@@ -30,7 +30,7 @@ git clone https://github.com/Myralllka/blood-and-milk.git ~/blood_and_milk
 ~~~~
 3) move into the directory and make app executable:
 ~~~~
-cd ~/blood_abd_milk; sudo chmod +x Application.sh
+cd ~/blood_and_milk; sudo chmod +x Application.sh
 ~~~~
 and than you need only to start the app
 ~~~~
