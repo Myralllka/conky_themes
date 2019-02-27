@@ -44,10 +44,12 @@ If you want to modify this files:
 3) modify that directory as you want
 4) make pull request
 <hr>
-if you want to understand in which way each file works, you can do:<br>
+if you want to understand in which way each file works, you can do:
+
 ~~~~
 conky -c /file_to_start
 ~~~~
-<b>i recommend to do this with every file and modify them one by one</b>
+
+<b>I recommend to do this with every file and modify them one by one</b>
 
 ![screenshot](https://github.com/Myralllka/blood-and-milk/blob/master/Screenshot%20from%202019-02-27%2013-10-52.png)
