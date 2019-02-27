@@ -18,10 +18,11 @@ You will know everything about your computer without any commands - all informat
 You can change and add everything you want, scripts on any languages and it will be very easy
 
 <h2>Installation</h2>
-1) install conky-cairo
-in ArchLinux from AUR:
+
+1) install conky-cairo<br>
+in ArchLinux from AUR via a command:<br>
 ~~~~
-youurt -S conky-cairo
+yaourt -S conky-cairo
 ~~~~
 2) clone this repo from git:
 ~~~~
@@ -43,7 +44,7 @@ If you want to modify this files:
 3) modify that directory as you want
 4) make pull request
 <hr>
-if you want to understand in which way each file works, you can do:
+if you want to understand in which way each file works, you can do:<br>
 ~~~~
 conky -c /file_to_start
 ~~~~
