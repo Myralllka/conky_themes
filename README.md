@@ -52,4 +52,6 @@ conky -c /file_to_start
 
 <b>I recommend to do this with every file and modify them one by one</b>
 
+[Here](http://conky.sourceforge.net/variables.html) you can find information about conky objects and how to work with them
+
 ![screenshot](https://github.com/Myralllka/blood-and-milk/blob/master/Screenshot%20from%202019-02-27%2013-10-52.png)
