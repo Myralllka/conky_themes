@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=conky
-Exec=~/blood-and-milk/conky_start
+Exec=~/blood-and-milk/Application.sh
