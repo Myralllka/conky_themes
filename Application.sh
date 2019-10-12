@@ -7,12 +7,12 @@ gsettings set org.gnome.desktop.background picture-uri "file:///home/$USER/blood
 sleep 7
 
 conky -c ~/blood-and-milk/connections_graph.conf &
-conky -c ~/blood-and-milk/disk_graph.conf &
+conky -c ~/blood-and-milk/disk/disk_graph.conf &
 conky -c ~/blood-and-milk/cpu_histograme.conf &
 
 sleep 3
 
-conky -c ~/blood-and-milk/fs_disk.conf &
+conky -c ~/blood-and-milk/disk/fs_disk.conf &
 conky -c ~/blood-and-milk/memory_graph.conf &
 
 sleep 3
