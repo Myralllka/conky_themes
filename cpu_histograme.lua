@@ -14,7 +14,7 @@ function conky_main(color, alpha)
 		-- base_rgba = {234, 67, 53}
 		-- accent_rgba = {165, 173, 255, 1}
 		-- settings
-		center_x = 298
+		center_x = 198
 		center_y = 279
 		radius = 234
 		circle_width = 50
