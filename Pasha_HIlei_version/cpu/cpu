@@ -1,0 +1,70 @@
+update_interval 1 							#frissítési idővallum másodpercben
+alignment top_left 							#jobb felső sarokba igazít
+gap_x 966 								#x irányba eltolás
+gap_y 0 								#y irányba eltolás
+maximum_width 638 							#max szélesség
+minimum_size 638 233 							#ablak minimum mérete
+double_buffer yes							#nem villodzik az ablak
+background no 								#áttetsző háttér
+border_width 0 								#keret vastagsága
+#draw_borders								#téglalap alakú keretet rajzol
+cpu_avg_samples 2 							#cpu pontosabb monitorozásához
+diskio_avg_samples 2 							#meghajtó pontosabb monitorozásához
+net_avg_samples 2 							#internet pontosabb monitorozása
+format_human_readable yes 						#mértékegységek nem bájtokban
+override_utf8_locale yes 						#karakterkódolás felülbírálása
+own_window yes 								#saját ablakbeállítások bekapcsolása
+own_window_type normal 							#ablaktípusok, override=ablakmenedzser szabályi nem vonatkoznak rá, desktop=díszítés nélküli panel=mindig felül,  dock=mindig felül, normal=normál
+own_window_transparent yes 						#conky ablak átlátszóvá válik
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below 	#ablak tulajdonságai below=alultartás skip_taskbar=tálca mellőzése undecorated=keret és gombok eltávolítása override=ablakkezelő felülbírálása sticky=minden munkaterületen 
+own_window_argb_visual yes 						#átlátszó ablak
+own_window_argb_value 125 						#átlátszóság mértéke 0-255
+text_buffer_size 256 							#szöveg buffer mérete
+use_xft yes 								#élsimítás
+xftfont Droid Sans:size=8						#alapértelmezett betütípus
+draw_graph_borders no							#keret a grafikon köré
+draw_outline no								#körülrajzolás
+draw_shades no								#szöveg árnyékolása
+
+own_window_title cpu
+# Color scheme #
+color1 3e8fba								#előre meghatározott szín
+color2 c9ecff
+color3 5ac6ff
+color4 1e3c4c
+max_specials 10000
+max_user_text 15000
+
+lua_load ~/hightech/cpu/rings_cpu.lua					#külső fájl elérése
+lua_draw_hook_pre main_rings						#betöltendő modul
+
+TEXT
+#Cpu típusa#
+${color1}${goto 20}${font :size=6}${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'| uniq | cut -c 1-47}
+#Teljesítmény Hz-ben#
+${font Earth Memory :size=32}${color2}${alignr 532}${voffset 55}${freq cpu1}
+${alignr 207}${voffset -35}${freq cpu3}
+${alignr 532}${voffset 75}${freq cpu2}
+${alignr 207}${voffset -35}${freq cpu4}${font}
+
+#Teljesítmény %-ban#
+${alignc 38}${voffset -188}${cpu cpu1}
+${voffset -5}${goto 282}${font :size=5}%${font}
+${alignc -286}${voffset -24}${cpu cpu3}
+${voffset -5}${goto 606}${font :size=5}%${font}
+${alignc 38}${voffset 85}${cpu cpu2}
+${voffset -6}${goto 282}${font :size=5}%${font}
+${alignc -286}${voffset -23}${cpu cpu4}
+${voffset -6}${goto 606}${font :size=5}%${font}
+
+#Hőmérséklet kijelző#
+${voffset -97}${alignc 38}${color ff0000}${execi 20 sensors | grep "Core 0" | cut -c16-17}
+${voffset -5}${goto 280}${font :size=5}°C${font}
+${voffset -24}${alignc -286}${execi 20 sensors | grep "Core 2" | cut -c16-17}
+${voffset -5}${goto 604}${font :size=5}°C${font}$color1
+
+#CPU azonosítók#
+${voffset -93}${goto 24}${font :size=6 :bold}${color2}CPU1
+${voffset -10}${goto 347}${font :size=6 :bold}CPU3
+${voffset 98}${goto 24}${font :size=6 :bold}CPU2
+${voffset -10}${goto 347}${font :size=6 :bold}CPU4
