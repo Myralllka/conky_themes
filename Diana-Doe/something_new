@@ -1,0 +1,68 @@
+conky.config = {
+-- Conky settings --
+    update_interval = 1,                            --frissítési idővallum másodpercben
+    background = true,                              --áttetsző háttér
+    cpu_avg_samples = 2,                            --cpu pontosabb monitorozásához
+    net_avg_samples = 2,                            --internet pontosabb monitorozása
+    diskio_avg_samples = 2,                         --meghajtó pontosabb monitorozásához
+    override_utf8_locale = true,                    --karakterkódolás felülbírálása
+    double_buffer = true,                           --nem villodzik az ablak
+    no_buffers  = true,
+    text_buffer_size = 256,                         --szöveg buffer mérete
+    imlib_cache_size = 10,
+    max_user_text = 15000,
+    format_human_readable = true,                   --mértékegységek nem bájtokban
+
+-- Window specifications --
+    own_window = true,                              --saját ablakbeállítások bekapcsolása
+    own_window_type = 'normal',                     --ablaktípusok, override=ablakmenedzser szabályi nem vonatkoznak rá, desktop=díszítés nélküli panel=mindig felül,  dock=mindig felül, normal=normál
+    own_window_transparent = false,                 --conky ablak átlátszóvá válik
+    own_window_argb_visual = true,                  --átlátszó ablak
+    own_window_argb_value = 0,                      --átlátszóság mértéke 0-255
+    own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',  --ablak tulajdonságai below=alultartás skip_taskbar=tálca mellőzése undecorated=keret és gombok eltávolítása override=ablakkezelő felülbírálása sticky=minden munkaterületen
+    own_window_title = 'cpu',
+    minimum_width = 1270,                           --minimum szélesség
+    minimum_height = 380,                           --minimum magasság
+    alignment = 'top_left',                         --jobb felső sarokba igazít
+    gap_x = 435,                                    --x irányba eltolás
+    gap_y = 630,                                    --y irányba eltolás
+
+-- Graphics settings --
+    draw_shades = false,                            --szöveg árnyékolása
+    draw_outline = false,                           --körülrajzolás
+    draw_borders = false,                           --téglalap alakú keretet rajzol
+    draw_graph_borders = false,                     --keret a grafikon köré
+    border_width = 0,                               --keret vastagsága
+
+-- Text settings --
+    use_xft = true,                                 --élsimítás
+    font = 'Ubuntu:size=7',                         --alapértelmezett betütípus
+    color0 = '39c9c4',                              --előre meghatározott szín
+    color1 = 'd59704',
+    color2 = '794e64',
+
+    lua_load = '~/Downloads/sci_fi_hud_by_met30-dbsolkt/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/lua/cpu.lua',
+    lua_draw_hook_pre = 'main',
+    
+};
+
+conky.text = [[
+${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu.png -p 0,0}
+${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu_0.png -p 10,140 -s 50x50}${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu_1.png -p 264,140 -s 50x50}${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu_2.png -p 518,140 -s 50x50}${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu_3.png -p 772,140 -s 50x50}${image ~/~/Downloads/sci_fi_hud_by_met30-dbsolkt/.conky/images/cpu_4.png -p 1026,140 -s 50x50}
+${color1}${voffset 120}${alignr 1030}${freq cpu0} Mhz
+${alignr 1030}${cpu cpu0} %
+${color2}${alignr 1030}${exec sensors | grep "Package id 0:" | cut -c17-23}
+${color1}${voffset -33}${alignr 776}${freq cpu1} Mhz
+${alignr 776}${cpu cpu1} %
+${color2}${alignr 776}${exec sensors | grep "Core 0:" | cut -c17-23}
+${color1}${voffset -33}${alignr 522}${freq cpu2} Mhz
+${alignr 522}${cpu cpu2} %
+${color2}${alignr 522}${exec sensors | grep "Core 1:" | cut -c17-23}
+${color1}${voffset -33}${alignr 268}${freq cpu3} Mhz
+${alignr 268}${cpu cpu3} %
+${color2}${alignr 268}${exec sensors | grep "Core 2:" | cut -c17-23}
+${color1}${voffset -33}${alignr 14}${freq cpu4} Mhz
+${alignr 14}${cpu cpu4} %
+${color2}${alignr 14}${exec sensors | grep "Core 3:" | cut -c17-23}
+${color}${voffset 180}${goto 110}${exec sensors | grep "cpu_fan:" | cut -c14-21}${goto 366}Core1${goto 622}Core2${goto 878}Core3${goto 1134}Core4
+]];
