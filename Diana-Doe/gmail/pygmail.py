@@ -5,8 +5,8 @@ import urllib
 import codecs
 from xml.dom import minidom
 
-email = 'bohdan.mandziuvatyi.kb.2019@lpnu.ua'  # your email here..feel free to ommit the '@...' suffix
-passwd = '19.11.2001'  # your password here
+email = ''  # your email here..feel free to ommit the '@...' suffix
+passwd = ''  # your password here
 
 url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (email, passwd)
 
