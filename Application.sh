@@ -30,6 +30,5 @@ sleep 3
 conky -c ~/blood-and-milk/connections_list.conf &
 conky -c ~/blood-and-milk/processes_list.conf &
 
-sleep 10
-
-conky -c ~/blood-and-milk/image/globus_gif &
+#sleep 10
+#conky -c ~/blood-and-milk/image/globus_gif &
