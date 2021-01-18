@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/python
 # vim: set fileencoding=UTF-8 :
 
-import urllib
+import urllib.request
 import codecs
 from xml.dom import minidom
 
