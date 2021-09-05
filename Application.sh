@@ -21,14 +21,14 @@ conky -c ~/blood-and-milk/temperature_rings.conf &
 
 sleep 3
 
-conky -c ~/blood-and-milk/gmail/gmail.conf &
 conky -c ~/blood-and-milk/cpu_rings.conf &
-conky -c ~/blood-and-milk/notes.conf &
+# conky -c ~/blood-and-milk/gmail/gmail.conf &
+# conky -c ~/blood-and-milk/notes.conf &
 
 sleep 3
 
 conky -c ~/blood-and-milk/connections_list.conf &
-conky -c ~/blood-and-milk/processes_list.conf &
+ conky -c ~/blood-and-milk/processes_list.conf &
 
-#sleep 10
-#conky -c ~/blood-and-milk/image/globus_gif &
+# sleep 10
+# conky -c ~/blood-and-milk/image/globus_gif &
