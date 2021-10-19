@@ -1,3 +1,4 @@
+conky.config = {
 update_interval 0.1 							#frissítési idővallum másodpercben
 alignment top_left 							#jobb felső sarokba igazít
 gap_x 956 								#x irányba eltolás
@@ -31,6 +32,8 @@ color3 5ac6ff
 color4 1e3c4c
 max_specials 10000
 max_user_text 15000
+
+}
 
 TEXT
 

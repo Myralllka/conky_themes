@@ -1,42 +1,43 @@
-update_interval 1 							#frissítési idővallum másodpercben
-alignment top_left 							#jobb felső sarokba igazít
-gap_x 966 								#x irányba eltolás
-gap_y 0 								#y irányba eltolás
-maximum_width 638 							#max szélesség
-minimum_size 638 233 							#ablak minimum mérete
-double_buffer yes							#nem villodzik az ablak
-background no 								#áttetsző háttér
-border_width 0 								#keret vastagsága
-#draw_borders								#téglalap alakú keretet rajzol
-cpu_avg_samples 2 							#cpu pontosabb monitorozásához
-diskio_avg_samples 2 							#meghajtó pontosabb monitorozásához
-net_avg_samples 2 							#internet pontosabb monitorozása
-format_human_readable yes 						#mértékegységek nem bájtokban
-override_utf8_locale yes 						#karakterkódolás felülbírálása
-own_window yes 								#saját ablakbeállítások bekapcsolása
-own_window_type normal 							#ablaktípusok, override=ablakmenedzser szabályi nem vonatkoznak rá, desktop=díszítés nélküli panel=mindig felül,  dock=mindig felül, normal=normál
-own_window_transparent yes 						#conky ablak átlátszóvá válik
-own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below 	#ablak tulajdonságai below=alultartás skip_taskbar=tálca mellőzése undecorated=keret és gombok eltávolítása override=ablakkezelő felülbírálása sticky=minden munkaterületen 
-own_window_argb_visual yes 						#átlátszó ablak
-own_window_argb_value 125 						#átlátszóság mértéke 0-255
-text_buffer_size 256 							#szöveg buffer mérete
-use_xft yes 								#élsimítás
-xftfont Droid Sans:size=8						#alapértelmezett betütípus
-draw_graph_borders no							#keret a grafikon köré
-draw_outline no								#körülrajzolás
-draw_shades no								#szöveg árnyékolása
+conky.config = {
+    update_interval=1 							#frissítési idővallum másodpercben alignment top_left 							#jobb felső sarokba igazít
+    gap_x=966 								#x irányba eltolás
+    gap_y=0 								#y irányba eltolás
+    maximum_width=638 							#max szélesség
+    minimum_size=638 233 							#ablak minimum mérete
+    double_buffer=true							#nem villodzik az ablak
+    background=false 								#áttetsző háttér
+    border_width=0 								#keret vastagsága
+    #draw_borders								#téglalap=alakú keretet rajzol
+    cpu_avg_samples=2 							#cpu pontosabb monitorozásához
+    diskio_avg_samples=2 							#meghajtó pontosabb monitorozásához
+    net_avg_samples=2 							#internet pontosabb monitorozása
+    format_human_readable=true 						#mértékegységek nem bájtokban
+    override_utf8_locale=true 						#karakterkódolás felülbírálása
+    own_window=true 								#saját ablakbeállítások bekapcsolása
+    own_window_type='override' 							#ablaktípusok, override=ablakmenedzser szabályi nem vonatkoznak rá, desktop=díszítés nélküli panel=mindig felül,  dock=mindig felül, normal=normál
+    own_window_transparent=true 						#conky ablak átlátszóvá válik
+    own_window_hints=undecorate,sticky,skip_taskbar,skip_pager,below 	#ablak tulajdonságai below=alultartás skip_taskbar=tálca mellőzése undecorated=keret és gombok eltávolítása override=ablakkezelő felülbírálása sticky=minden munkaterületen 
+    own_window_argb_visual=false 						#átlátszó ablak
+    own_window_argb_value=125 						#átlátszóság mértéke 0-255
+    text_buffer_size=256 							#szöveg buffer mérete
+    use_xft=true 								#élsimítás
+    xftfont=Droid Sans:size=8						#alapértelmezett betütípus
+    draw_graph_borders=false							#keret a grafikon köré
+    draw_outline=false								#körülrajzolás
+    draw_shades=false								#szöveg árnyékolása
 
-own_window_title cpu
-# Color scheme #
-color1 3e8fba								#előre meghatározott szín
-color2 c9ecff
-color3 5ac6ff
-color4 1e3c4c
-max_specials 10000
-max_user_text 15000
+    own_window_title='cpu'
+    # Color=scheme #
+    color1='#3e8fba'								#előre meghatározott szín
+    color2='#c9ecff'
+    color3='#5ac6ff'
+    color4='#1e3c4c'
+    max_specials=10000
+    max_user_text=15000
 
-lua_load ~/hightech/cpu/rings_cpu.lua					#külső fájl elérése
-lua_draw_hook_pre main_rings						#betöltendő modul
+    lua_load='~/hightech/cpu/rings_cpu.lua'					#külső fájl elérése
+    lua_draw_hook_pre='main_rings'						#betöltendő modul
+}
 
 TEXT
 #Cpu típusa#
